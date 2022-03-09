@@ -1,0 +1,40 @@
+.productPage {
+  display: block;
+  max-width: 1500px;
+  margin: auto;
+  padding: 30px 30px;
+}
+
+.productPage__infoContainer {
+  display: flex;
+}
+
+.productPage__sectionContainer {
+  margin-top: 70px;
+}
+
+.productPage__sectionTitle {
+  display: block;
+  font-family: Helvetica;
+  font-weight: normal;
+  color: #232f3e;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.productPage__description {
+  font-family: "Segoe UI";
+  color: #686868;
+  font-size: 1rem;
+}
+
+.productPage__relatedProducts {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.productPage__relatedProducts {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /*margin: auto -100px auto -100px;*/
+}

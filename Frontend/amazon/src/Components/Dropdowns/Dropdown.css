@@ -1,0 +1,36 @@
+.dropdown {
+  user-select: none;
+  position: relative;
+}
+
+.dropdown__btn {
+  padding: 15px 20px;
+  font-weight: bold;
+  color: #232f3e;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.dropdown__content {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  padding: 10px;
+  background: #fff;
+  box-shadow: 3px 3px 10px 6px rgba(0, 0, 0, 0.06);
+  font-weight: normal;
+  color: #232f3e;
+  width: 95%;
+}
+
+.dropdown__item {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.dropdown__item:hover {
+  background: #ff9900;
+  color: #fff;
+}

@@ -1,0 +1,94 @@
+.footer {
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
+  height: 500px;
+  max-width: 1920px;
+  min-width: 100%;
+  position: relative;
+  color: var(--primaryColor);
+}
+
+.footer__content {
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.footer__title {
+  font-family: "SF Display";
+  font-weight: 600;
+  font-size: 45px;
+  padding-bottom: 45px;
+  border-bottom: solid 4px var(--primaryColor);
+  width: fit-content;
+  margin: 40px auto;
+}
+
+.footer--subscribed {
+  border: none;
+  padding: 0px;
+}
+
+.footer__subscribedContainer {
+  text-align: center;
+}
+
+.footer__subTitle {
+  font-family: var(--primaryFont);
+  margin-bottom: 40px;
+  font-weight: normal;
+}
+
+.footer__inputContainer {
+  background-color: white;
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  border-radius: 15px;
+  box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.04);
+}
+
+.footer__inputField {
+  flex: 1;
+  border: none;
+  border-radius: 15px;
+  font-size: 18px;
+  padding-left: 20px;
+}
+
+.footer__inputField:focus {
+  outline: none;
+}
+
+.footer__inputSubmt {
+  background-color: var(--suddleSecondaryColor);
+  color: white;
+  border: none;
+  margin: 5px 5px 5px 0px;
+  border-radius: 12px;
+  font-size: 18px;
+  padding: 12px 16px;
+}
+
+.footer__aboutContainer {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  display: flex;
+  justify-content: center;
+  color: var(--secondaryColor);
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.footer__validationError {
+  display: block;
+  color: red;
+  margin-left: 10px;
+  margin-top: 5px !important;
+  font-size: 15px;
+}

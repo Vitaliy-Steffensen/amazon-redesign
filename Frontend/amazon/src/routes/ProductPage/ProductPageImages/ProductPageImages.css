@@ -1,0 +1,38 @@
+.productPageImages {
+  flex: 1;
+  min-width: 65%;
+  display: flex;
+}
+
+.productPageImages__imageOptionContainer {
+  width: 150px;
+}
+
+.productPageImages__imageDisplayContainer {
+  flex: 1;
+}
+
+.productPageImages__imageDisplay {
+  object-fit: contain;
+  max-height: 650px;
+  width: 96%;
+  margin: auto 2%;
+}
+
+.productPageImages__imageOption {
+  object-fit: contain;
+  height: 100px;
+  width: 100px;
+  padding: 10px;
+  margin-right: 5px;
+  border: #eaeded 1px solid;
+}
+
+.productPageImages__imageOption:hover {
+  border: #232f3e 1px solid;
+  box-shadow: 3px 3px 5px 3px rgba(0, 0, 0, 0.06);
+}
+
+.productPageImages__selectedImage {
+  border: #232f3e 1px solid;
+}

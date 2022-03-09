@@ -1,0 +1,23 @@
+.loadingPage {
+  height: calc(100vh - 85px);
+}
+
+.loadingPage--center {
+  max-height: fit-content;
+  max-width: fit-content;
+  position: absolute;
+  top: calc(50% - 80px);
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.loadingPage__pageLogo {
+  max-height: 40px;
+  margin-bottom: 40px;
+}
+
+.loadingPage__iconContainer {
+  margin: auto;
+  width: fit-content;
+}

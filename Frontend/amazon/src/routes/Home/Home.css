@@ -1,0 +1,9 @@
+.home {
+  max-width: 1920px;
+  margin: auto;
+}
+
+.home__heroBanner {
+  max-width: 1920px;
+  object-fit: cover;
+}

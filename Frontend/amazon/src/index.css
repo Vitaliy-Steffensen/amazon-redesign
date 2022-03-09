@@ -1,0 +1,18 @@
+* {
+  margin: 0px;
+
+  /*Theme variabls*/
+  --primaryFont: "Segoe UI";
+  --ecommerceFont: "Helvetica";
+
+  --primaryColor: #232f3e;
+  --highlightColor: #232f3e;
+  --secondaryColor: #f89500;
+  --suddleSecondaryColor: #febd69;
+  --linkColor: #007185;
+}
+
+body {
+  margin: 0px;
+  font-family: "Segoe UI", "Helvetica";
+}

@@ -1,0 +1,16 @@
+.catalog {
+  margin: auto;
+  max-width: 1800px;
+  padding: 20px;
+  display: flex;
+}
+
+.catalog__products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.catalog__noProducts {
+  flex: 1;
+  text-align: center;
+}

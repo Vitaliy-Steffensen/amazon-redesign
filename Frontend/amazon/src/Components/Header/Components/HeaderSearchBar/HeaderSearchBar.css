@@ -1,0 +1,82 @@
+.headerSearch {
+  width: 660px;
+  user-select: none;
+  position: relative;
+  font-weight: bold;
+  color: #232f3e;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.headerSearch__inputBar {
+  display: flex;
+  align-items: center;
+  background: white;
+  width: 100%;
+  height: 45px;
+  border-radius: 18px;
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.05);
+}
+
+.headerSearch__icon {
+  margin-left: 5px;
+  margin-right: 3px;
+}
+
+.headerSearch__inputField {
+  flex: 1;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  border: none;
+}
+.headerSearch__inputField:focus {
+  outline: none;
+}
+
+.headerSearch__allButton {
+  height: 35px;
+  width: 35px;
+  background: #febd69;
+  color: white;
+  border-radius: 14px;
+  padding: 6px 7px;
+  margin-right: 5px;
+  border: none;
+  cursor: pointer;
+}
+.headerSearch__allButton:hover {
+  background: #ffc67c;
+}
+
+.headerSearch__content {
+  position: absolute;
+  top: 105%;
+  left: 0;
+  padding: 10px;
+  background: #fff;
+  box-shadow: 3px 3px 10px 6px rgba(0, 0, 0, 0.06);
+  font-weight: normal;
+  color: #232f3e;
+  width: 96%;
+  border-radius: 4px;
+}
+
+.headerSearch__item {
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.headerSearch__item:hover {
+  background: #fafafa;
+}
+
+.headerSearch__resultImage {
+  height: 35px;
+  object-fit: contain;
+  margin-right: 10px;
+}
