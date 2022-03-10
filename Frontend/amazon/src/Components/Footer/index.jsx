@@ -55,7 +55,7 @@ export default function Footer() {
           </>
         )}
       </div>
-      <Link to="/about" className="footer__aboutContainer">
+      <Link to="/project" className="footer__aboutContainer">
         About this app&nbsp;
         <InfoOutlinedIcon />
       </Link>

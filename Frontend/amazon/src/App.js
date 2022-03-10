@@ -20,7 +20,6 @@ const App = () => {
       <div className="app">
         <Switch>
           <Route path="/login" component={Login} />
-          <Route path="/about" component={About} />
           <Route path="/catalog" component={Catalog} />
           <Route path="/catalog/:one/:two" component={Catalog} />
           <Route path="/product/:id" component={ProductPage} />
