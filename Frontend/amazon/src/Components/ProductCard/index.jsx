@@ -19,7 +19,7 @@ export default function ProductCard({ product, small }) {
         {Array(product?.rating)
           .fill()
           .map((_, i) => (
-            <StarIcon className="productTitle__star" />
+            <StarIcon className="productTitle__star" key={i} />
           ))}
         <FormattedPrice price={product?.price} className="productCard__price" />
       </div>

@@ -24,7 +24,13 @@ export default class APIService {
       method: "GET",
     })
       .then((resp) => resp.json())
-      .catch((error) => console.log(error));
+      .catch((error) => {
+        console.log(
+          "${process.env.REACT_APP_API_URL}/api/search-products/ ",
+          `${process.env.REACT_APP_API_URL}/api/search-products/`
+        );
+        console.log(error);
+      });
   }
   static GetAllPreviewProducts() {
     return fetch(`${process.env.REACT_APP_API_URL}/api/preview-products/`, {
@@ -41,6 +47,14 @@ export default class APIService {
         method: "GET",
       }
     )
+      .then((resp) => resp.json())
+      .catch((error) => console.log(error));
+  }
+
+  static GetAllHotProducts() {
+    return fetch(`${process.env.REACT_APP_API_URL}/api/hot-products/`, {
+      method: "GET",
+    })
       .then((resp) => resp.json())
       .catch((error) => console.log(error));
   }

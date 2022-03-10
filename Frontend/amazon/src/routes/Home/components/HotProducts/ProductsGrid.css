@@ -1,0 +1,31 @@
+.hot-products {
+  width: 100%;
+  margin: 100px auto 0;
+}
+
+.hot-product__grid {
+  max-width: 1650px;
+  margin: 40px auto 0;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.hot-product__title {
+  color: #000;
+  font-size: 3.3rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.hot-product__link {
+  color: #007185;
+  font-size: 1.75rem;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+}
+
+.hot-product__link:hover {
+  text-decoration: underline;
+  color: #ff9900;
+}

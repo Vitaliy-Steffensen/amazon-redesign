@@ -47,11 +47,11 @@ const Dropdown = ({ placeholder, selected, setSelected, options }) => {
 
 export default Dropdown;
 
-Dropdown.propTypes = {
-  placeholder: PropTypes.string.isRequired,
-  selected: PropTypes.string.isRequired,
-  setSelected: PropTypes.func.isRequired,
-  options: {
-    name: PropTypes.string.isRequired,
-  },
-};
+// Dropdown.propTypes = {
+//   placeholder: PropTypes.string.isRequired,
+//   selected: PropTypes.string.isRequired,
+//   setSelected: PropTypes.func.isRequired,
+//   options: {
+//     name: PropTypes.string.isRequired,
+//   },
+// };

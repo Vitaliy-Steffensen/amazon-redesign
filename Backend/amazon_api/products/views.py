@@ -1,5 +1,5 @@
-from .models import Product, ProductCategory
-from .serializers import PreviewProductSerializer, SearchProductSerializer, DetailedProductSerializer, ProductCategorySerializer
+from .models import Product, ProductCategory, HotProduct
+from .serializers import HotProductSerializer, PreviewProductSerializer, SearchProductSerializer, DetailedProductSerializer, ProductCategorySerializer
 from rest_framework import viewsets
 from rest_framework import mixins
 from rest_framework import generics
@@ -25,3 +25,7 @@ class DetailedProductViewSet(generics.GenericAPIView, mixins.RetrieveModelMixin)
 class ProductCategoriesViewSet(generics.ListAPIView):
     queryset = ProductCategory.objects.all()
     serializer_class = ProductCategorySerializer
+
+class HotProductViewSet(generics.ListAPIView):
+    queryset = HotProduct.objects.all()
+    serializer_class = HotProductSerializer

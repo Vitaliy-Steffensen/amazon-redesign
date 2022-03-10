@@ -60,8 +60,8 @@ export default function Catalog() {
           <LoadingPageContent />
         ) : filteredProducts().length > 0 ? (
           <div className="catalog__products">
-            {filteredProducts().map((product) => (
-              <ProductCard product={product} />
+            {filteredProducts().map((product, i) => (
+              <ProductCard product={product} key={i} />
             ))}
           </div>
         ) : (

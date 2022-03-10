@@ -1,0 +1,37 @@
+.project__heading-logo {
+  display: block;
+  width: 300px;
+  object-fit: contain;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.project__in-progress {
+  text-align: center;
+  margin: auto;
+  color: #232f3e;
+  font-size: 1rem;
+  margin-bottom: 150px;
+}
+
+.project__grid {
+  max-width: 1800px;
+  margin: 40px auto 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.project__git {
+  display: block;
+  text-align: center;
+  margin: auto;
+  color: #232f3e;
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+  text-decoration: none;
+}
+
+.project__git:hover {
+  color: #ff9900;
+  text-decoration: underline;
+}

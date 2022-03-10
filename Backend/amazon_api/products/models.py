@@ -54,3 +54,7 @@ class ProductFeature(models.Model):
         on_delete=models.CASCADE, default=None,  related_name='features')
     title = models.CharField(max_length=100)
 
+class HotProduct(models.Model):
+    product = models.ForeignKey(         
+        Product,
+        on_delete=models.CASCADE, default=None,  related_name='hot_product')

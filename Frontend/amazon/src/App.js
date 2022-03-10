@@ -10,6 +10,7 @@ import Catalog from "./routes/Catalog";
 import history from "./helpers/history";
 import ScrollToTopOnPathChange from "./Components/ScrollToTopOnPathChange";
 import About from "./routes/About";
+import Project from "./routes/Project";
 //import AuthContextProvider from "./contexts/AuthContext";
 
 const App = () => {
@@ -25,6 +26,7 @@ const App = () => {
           <Route path="/product/:id" component={ProductPage} />
           <PrivateRoute path="/myaccount" component={Header} />
           <Route path="/cart" component={Cart} />
+          <Route path="/project" component={Project} />
           <Route path="/" component={Home} />
         </Switch>
       </div>

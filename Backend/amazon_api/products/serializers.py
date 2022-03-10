@@ -1,6 +1,6 @@
 from pickletools import read_floatnl
 from rest_framework import serializers
-from .models import Product, ProductImage, ProductFeature, ProductCategory
+from .models import Product, ProductImage, ProductFeature, ProductCategory, HotProduct
 
 class SearchProductSerializer(serializers.ModelSerializer):
     class Meta:
@@ -35,3 +35,9 @@ class ProductCategorySerializer(serializers.ModelSerializer):
     class Meta:
         model = ProductCategory
         fields = '__all__'
+
+class HotProductSerializer(serializers.ModelSerializer):
+    product=PreviewProductSerializer()
+    class Meta:
+        model = HotProduct
+        fields = ['id', 'product']
