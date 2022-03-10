@@ -23,7 +23,7 @@ export default function Footer() {
   return (
     <div
       className="footer"
-      style={{ backgroundImage: `url(${mediaURL}/footer%20banner.jpg)` }}
+      style={{ backgroundImage: `url(${mediaURL}/Footer%20Banner.jpg)` }}
     >
       <div className="footer__content">
         {subscribed ? (
