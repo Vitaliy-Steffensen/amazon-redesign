@@ -5,6 +5,7 @@ import "./Project.css";
 import { projectData } from "./staticProjectData";
 import ProjectCard from "./components/ProjectCard";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import { mediaURL } from "../../Utils/Constants";
 
 export default function Project() {
   const { features, createdWith, projectSpan, usedTools } = projectData;
@@ -14,7 +15,7 @@ export default function Project() {
       <div className="project">
         <img
           className="project__heading-logo"
-          src={`${process.env.REACT_APP_API_URL}/media/content/amazon-redesign-icon.png`}
+          src={`${mediaURL}/amazon-redesign-icon.png`}
           alt=""
         />
         <div className="project__in-progress">
