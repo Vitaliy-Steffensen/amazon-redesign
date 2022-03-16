@@ -1,0 +1,55 @@
+.stripe-popup {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  max-width: 200px;
+
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  animation: updown 3s ease infinite;
+}
+
+.stripe-popup:hover {
+  animation: none;
+}
+
+.stripe-popup__close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: transparent;
+  border: none;
+  color: #171820;
+  cursor: pointer;
+}
+
+.stripe-popup__link {
+  color: #007185;
+  text-decoration: none;
+}
+
+.stripe-popup__link:hover {
+  color: #f89500;
+  text-decoration: underline;
+}
+
+@keyframes updown {
+  0%,
+  50%,
+  100% {
+    transform: translatey(0);
+  }
+  20% {
+    transform: translatey(5px);
+  }
+  25% {
+    transform: translatey(-20px);
+  }
+  30% {
+    transform: translatey(20px);
+  }
+  35% {
+    transform: translatey(-5px);
+  }
+}

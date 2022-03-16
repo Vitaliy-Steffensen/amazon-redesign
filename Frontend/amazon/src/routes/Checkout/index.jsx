@@ -17,6 +17,7 @@ import {
   initialCheckoutValues,
   invalidCheckOutValues,
 } from "../../Utils/validations/checkoutValidation";
+import StripePopup from "./components/StripePopup";
 
 const Checkout = () => {
   const [succeeded, setSucceedeed] = useState(false);
@@ -149,6 +150,7 @@ const Checkout = () => {
           </div>
         </div>
       </div>
+      <StripePopup />
     </>
   );
 };
