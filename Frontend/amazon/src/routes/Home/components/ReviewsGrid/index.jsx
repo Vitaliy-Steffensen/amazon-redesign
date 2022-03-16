@@ -7,6 +7,7 @@ export default function ReviewsGrid() {
   const daysSinceDate = (date) =>
     (date = Math.floor((new Date().getTime() - date.getTime()) / 86400000));
 
+  reviews.map((review) => console.log(review.image));
   return (
     <div className="reviews-grid">
       <h3 className="reviews-grid__title">Global Solution</h3>

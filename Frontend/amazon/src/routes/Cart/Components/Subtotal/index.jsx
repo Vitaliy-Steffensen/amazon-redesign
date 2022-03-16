@@ -4,6 +4,7 @@ import "./Subtotal.css";
 import { useCartContext } from "../../../../helpers/contexts/CartContext";
 import { getcartTotal } from "../../../../helpers/reducers/cartReducer";
 import FormattedPrice from "../../../../Components/FormattedPrice";
+import history from "../../../../helpers/history";
 
 const Subtotal = () => {
   const [{ cart }] = useCartContext();
@@ -16,7 +17,12 @@ const Subtotal = () => {
           <FormattedPrice price={getcartTotal(cart)} />
         </strong>
       </span>
-      <button>Proceed to Checkout</button>
+      <button
+        onClick={() => history.push("/checkout")}
+        disabled={cart.length < 1}
+      >
+        {cart.length < 1 ? "Cart is emptry" : "Proceed to Checkout"}
+      </button>
     </div>
   );
 };

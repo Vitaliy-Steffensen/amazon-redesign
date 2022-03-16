@@ -6,6 +6,7 @@ export const initialState = {
     currencyValue: 1,
     vatRate: 10,
     numberSeporators: [",", "."],
+    currency: "usd",
   },
 };
 

@@ -9,6 +9,7 @@ export const countryOptions = [
     vatRate: 10,
     numberSeporators: [",", "."],
     daysToDeliver: 1,
+    currency: "usd",
   },
   {
     name: "Great Britain",
@@ -18,6 +19,7 @@ export const countryOptions = [
     vatRate: 20,
     numberSeporators: [",", "."],
     daysToDeliver: 5,
+    currency: "gbp",
   },
   {
     name: "Germany",
@@ -27,6 +29,7 @@ export const countryOptions = [
     vatRate: 19,
     numberSeporators: [".", ","],
     daysToDeliver: 6,
+    currency: "eur",
   },
   {
     name: "Denmark",
@@ -36,6 +39,7 @@ export const countryOptions = [
     vatRate: 25,
     numberSeporators: [" ", ","],
     daysToDeliver: 10,
+    currency: "dkk",
   },
 ];
 
@@ -46,4 +50,13 @@ export const reverseFormatPrice = (formattedPrice, currencyValue, vatRate) => {
   const priceWithoutTax = formattedPrice / (1 + vatRate / 100);
   const priceWithoutAddedCurrencyValue = priceWithoutTax / currencyValue;
   return priceWithoutAddedCurrencyValue.toFixed(3);
+};
+
+export const formatPrice = (price, country) => {
+  const CurrencyBasedPrice = price * country.currencyValue;
+
+  const taxedPrice =
+    (CurrencyBasedPrice * country?.vatRate) / 100 + CurrencyBasedPrice;
+
+  return taxedPrice.toFixed(2);
 };

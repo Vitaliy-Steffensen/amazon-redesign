@@ -18,7 +18,6 @@ export default function ProductPage() {
   useEffect(() => {
     APIService.GetDetailedProductData(id)
       .then((resp) => {
-        console.log("resp ", resp);
         setLoading(false);
         setPageTitle(resp.title);
         setProduct(resp);

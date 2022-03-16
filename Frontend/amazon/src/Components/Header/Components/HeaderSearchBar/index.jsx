@@ -3,18 +3,20 @@ import "./HeaderSearchBar.css";
 import SearchIcon from "@mui/icons-material/Search";
 import APIService from "../../../../Services/APIServices";
 import history from "../../../../helpers/history";
+import LoadingIndicator from "../../../LoadingIndicator";
 
 export default function HeaderSearchBar() {
   const [isActive, setIsActive] = useState(false);
   const [searchTerm, setSearchTerm] = useState("");
   let menuRef = useRef();
   var [products, setProducts] = useState(null);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     APIService.GetAllSearchProducts()
       .then((resp) => {
-        console.log(resp);
-        return setProducts(resp);
+        setIsLoading(false);
+        setProducts(resp);
       })
       .catch((error) => console.log(error));
   }, []);
@@ -23,7 +25,7 @@ export default function HeaderSearchBar() {
     document.addEventListener("mousedown", (event) => {
       if (isActive && !menuRef?.current?.contains(event.target)) {
         setIsActive(false);
-      } else if (!isActive && menuRef.current.contains(event.target)) {
+      } else if (!isActive && menuRef?.current?.contains(event.target)) {
         setIsActive(true);
       }
     });
@@ -56,7 +58,9 @@ export default function HeaderSearchBar() {
       </div>
       {isActive && (
         <div className="headerSearch__content">
-          {productsMatchingSearchTerm.length > 0 ? (
+          {isLoading ? (
+            <LoadingIndicator />
+          ) : productsMatchingSearchTerm.length > 0 ? (
             productsMatchingSearchTerm.map(
               (product, key) =>
                 key < 5 && (

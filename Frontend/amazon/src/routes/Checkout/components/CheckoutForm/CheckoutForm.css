@@ -1,0 +1,52 @@
+.checkout-form__form {
+  width: 100%;
+}
+
+.checkout-form__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.checkout-form__list-item > * {
+  display: block;
+  width: 100%;
+}
+.checkout-form__list-item > input,
+.checkout-form__grid-inputs input,
+.checkout-form__list-item .dropdown__btn,
+.checkout-form__list-item .dropdown__content {
+  font-size: 0.875rem;
+  border: 1px solid #494a4d;
+  width: 100%;
+  border-radius: 3px;
+}
+
+.checkout-form__list-item > input,
+.checkout-form__grid-inputs input,
+.checkout-form__list-item .dropdown__btn {
+  margin-bottom: 20px;
+  padding: 0.625rem 0.8125rem;
+}
+
+.checkout-form__grid-inputs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 50px;
+}
+
+.checkout-form__list-item label {
+  color: #232f3e;
+  font-size: 0.875rem;
+  font-family: bold;
+  font-family: Helvetica;
+  margin-bottom: 5px;
+}
+
+[data-error="true"] > input {
+  border: red 1px solid !important;
+}
+
+[data-error="true"] > label {
+  color: red;
+}

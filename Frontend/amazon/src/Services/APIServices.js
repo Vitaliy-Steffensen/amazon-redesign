@@ -11,6 +11,21 @@ export default class APIService {
       .catch((error) => console.log(error));
   } */
 
+  static CreatePayment(body) {
+    return fetch(
+      `${process.env.REACT_APP_API_URL}/api/create-payment-intent/`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(body),
+      }
+    )
+      .then((resp) => resp.json())
+      .catch((error) => console.log(error));
+  }
+
   static GetAllCategories() {
     return fetch(`${process.env.REACT_APP_API_URL}/api/categories/`, {
       method: "GET",

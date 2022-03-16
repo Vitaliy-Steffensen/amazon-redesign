@@ -15,7 +15,7 @@ export default function Project() {
       <div className="project">
         <img
           className="project__heading-logo"
-          src={`${mediaURL}/amazon-redesign-icon.png`}
+          src={`${mediaURL}/v1646986481/media/content/amazon-redesign-icon.png`}
           alt=""
         />
         <div className="project__in-progress">

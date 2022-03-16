@@ -15,7 +15,7 @@ const Home = () => {
       <div className="home">
         <img
           className="home__banner"
-          src={`${mediaURL}/homepage/hero%20section.jpg`}
+          src={`${mediaURL}/v1646986692/media/content/hero_section.jpg`}
           alt=""
         />
         <CategoryGrid />

@@ -20,7 +20,6 @@ function Login() {
     e.preventDefault();
     APIService.LoginUser({ username, password })
       .then((resp) => {
-        console.log(resp);
         return setToken("userToken", resp.token);
       })
       .catch((error) => console.log(error));

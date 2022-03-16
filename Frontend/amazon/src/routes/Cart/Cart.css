@@ -1,4 +1,4 @@
-.checkout {
+.cart {
   display: flex;
   padding: 20px;
   background-color: #ffffff;
@@ -7,12 +7,12 @@
   margin: auto;
 }
 
-.checkout__ad {
-  width: 100%;
-  margin-bottom: 10px;
+.cart__left {
+  flex: 1;
+  margin-right: 15px;
 }
 
-.checkout__title {
+.cart__title {
   margin-right: 10px;
   padding: 10px;
   border-bottom: 1px solid lightgray;

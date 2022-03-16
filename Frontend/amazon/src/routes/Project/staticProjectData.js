@@ -8,15 +8,16 @@ export const projectData = {
   ],
   createdWith: [
     "(UI & UX) Adobe XD",
-    "(BE) Python - Django, Rest, pillow, corsheaders, JWT ",
-    "(FE) Javascript - React js, Material UI",
+    "(BE) Python - Django, Rest, pillow, corsheaders, JWT, WhiteNoise, cloudinary",
+    "(FE) Javascript - React js, Prop-types, react-cookie, react-router-dom",
   ],
   projectSpan: [
-    "Cops of coffee: 0",
-    "created date: 31 01 2022",
+    "Cops of coffee: ≈30",
+    "created date: 01 02 2022",
     "By Vitaliy Steffensen",
   ],
   usedTools: [
+    "CDN",
     "Compund components",
     "Pure functions",
     "Context",

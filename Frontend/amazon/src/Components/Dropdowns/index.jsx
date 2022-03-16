@@ -5,15 +5,20 @@ import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 
 const Dropdown = ({ placeholder, selected, setSelected, options }) => {
   const [isActive, setIsActive] = useState(false);
-  let menuRef = useRef();
+  let menuRef = useRef(null);
 
   useEffect(() => {
-    document.addEventListener("mousedown", (event) => {
+    const onMenuClick = (event) => {
       if (!menuRef?.current?.contains(event.target)) {
         setIsActive(false);
       }
-    });
-  }, []);
+    };
+
+    document.addEventListener("mousedown", onMenuClick);
+    return () => {
+      document.removeEventListener("mousedown", onMenuClick);
+    };
+  }, [isActive]);
 
   return (
     <div className="dropdown">
