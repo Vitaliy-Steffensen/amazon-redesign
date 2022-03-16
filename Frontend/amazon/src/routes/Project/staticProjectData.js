@@ -4,12 +4,12 @@ export const projectData = {
     "Dynamic site based on country selection",
     "Fully functional usermanagement",
     "Stock management",
-    "Error handling",
+    "Form validation & error handling",
   ],
   createdWith: [
     "(UI & UX) Adobe XD",
     "(BE) Python - Django, Rest, pillow, corsheaders, JWT, WhiteNoise, cloudinary",
-    "(FE) Javascript - React js, Prop-types, react-cookie, react-router-dom",
+    "(FE) Javascript - React js, Prop-types, react-cookie, react-router-dom, Stripe",
   ],
   projectSpan: [
     "Cops of coffee: ≈30",
